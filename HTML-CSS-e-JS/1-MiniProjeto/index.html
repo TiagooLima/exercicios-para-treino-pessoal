@@ -4,75 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alcool ou Gasolina?</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-        * {
-            margin: 0;
-            font-family: poppins;
-        }
-
-        body {
-            background-color: #827551;
-        }
-
-        #card {
-            background-color: aliceblue;
-            width: 50%;
-            margin: 100px auto;
-            border: 1px solid black;
-            border-radius: 15px;
-            padding: 15px;
-        }
-
-        #card_body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .card_title {
-            margin-bottom: 20px;
-        }
-
-        form {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-flow: column nowrap;
-            margin: 15px;
-        }
-
-        #resultado {
-            background-color: lightblue;
-            border-radius: 25px;
-            width: fit-content;
-            padding: 10px 20px;
-        }
-
-        #resultado:empty {
-            padding: 0;
-        }
-
-        input {
-            border-radius: 10px;
-            width: 350px;
-            border: 2px solid #868070;
-            text-align: center;
-            padding: 5px;
-        }
-
-        button {
-            background-color: #868070;
-            padding: 10px;
-            border-radius: 10px;
-            color: white;
-        }
-
-        button:hover {
-            background-color: #5e5c57;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="container">
@@ -92,26 +24,6 @@
             </div>
         </div>
     </div>
-    <script>
-        // Codigo para que quando confirmado o formulario ele nao reinicie a pagina
-        const meuFormulario = document.getElementById('card_form');
-        meuFormulario.addEventListener('submit', function(event) {
-        event.preventDefault();
-        });
-
-        // coleta alcool, gasolina e implementa eles na div #resultado
-        const alcool = document.querySelector('#alcool')
-        const gasolina = document.querySelector('#gasolina')
-        const divResultado = document.querySelector('#resultado')
-        function calcularPreco(nm1,nm2) {
-            if (nm1 > nm2){
-                divResultado.innerHTML = `A gasolina e mais barata que o alcool`
-            }else if(nm2 > nm1) {
-                divResultado.innerHTML = `O alcool e mais barato que a gasolina`
-            }else {
-                divResultado.innerHTML = 'Ambos tem valores iguais.'
-            }
-        }
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
