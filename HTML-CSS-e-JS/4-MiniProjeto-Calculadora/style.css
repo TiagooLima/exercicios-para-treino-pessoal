@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+}
+
+/*Layout*/
+
+#resultado {
+    height: 50px;
+    width: 230px;
+    background-color: rgb(189, 223, 253);
+    text-align: end;
+    line-height: 50px;
+    border-radius: 15px 15px 0 0;
+}
+
+.botoes {
+    width: 57.5px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: aliceblue;
+    border: 1px solid rgb(189, 223, 253);
+    cursor: pointer;
+    user-select: none;
+    flex-shrink: 0;
+}
+
+.botoes:hover {
+    background-color: rgb(210, 255, 255);
+}
+
+.botoes[data=enter]{
+    border: 1px solid sienna;
+    background-color: lightcoral;
+    width: 50%;
+}
+
+.botoes[data=enter]:hover{
+    background-color: rgb(255, 176, 140);
+}
+
+.botoes[data=reset]{
+    border: 1px solid tomato;
+    background-color: sandybrown; 
+    width: 50%;
+}
+
+.botoes[data=reset]:hover{
+    background-color: rgb(216, 125, 109);
+}
+
+#todosOsBotoes {
+    display: flex;
+    flex-flow: row wrap;
+    width: 230px;
+}
+
+/*Parametros Gerais*/
+
+body {
+    background: #85dcff;
+    background: linear-gradient(22deg,rgba(133, 220, 255, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(115, 225, 255, 1) 100%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Responsividade*/
+@media (max-width: 400px) {
+    #calculadora {
+        max-width: 90%; 
+    }
+
+    .botoes {
+        height: 70px;      
+        line-height: 70px;
+        font-size: 1.2rem; 
+    }
+
+    #resultado {
+        height: 70px;
+        line-height: 70px;
+        font-size: 1.5rem;
+    }
+}
