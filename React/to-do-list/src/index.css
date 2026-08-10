@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+*{
+  font-family: "Google Sans", sans-serif;
+  padding: 0px; margin: 0px;
+  box-sizing: border-box;
+}
+
+#container{
+  min-height: 90vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.inputs{
+  border: 2px solid lightblue;
+  border-radius: 10px;
+  font-size: 1em;
+  padding: 0 10px;
+  background-color: #e8f0fe;
+} 
+
+.inputs:focus{
+  outline: 0;
+  border: 2px solid rgb(0, 147, 196);
+}

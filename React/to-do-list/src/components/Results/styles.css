@@ -1,0 +1,50 @@
+#results-box{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.result{
+    padding: 10px;
+    margin: 15px;
+    border: 2px solid lightblue;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 0 20px;
+    min-width: 70vw;
+    border-radius: 15px;
+}
+
+.result div{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.result button{
+    padding: 5px 10px;
+    border: 2px solid rgb(0, 147, 196);
+    background-color: white;
+    color: rgb(0, 147, 196);
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+.result button:hover{
+    background-color: rgb(0, 147, 196);
+    color: white;
+    cursor: pointer;
+}
+
+.result label {
+    font: 600 1em 'Google sans';
+    align-self: center;
+    margin: 0 1em 0 2.5em;
+}
+
+.result .inputs{
+    margin-right: 2.5em;
+}
