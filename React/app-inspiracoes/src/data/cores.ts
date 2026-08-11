@@ -1,0 +1,22 @@
+export const coresInspiracionais = [
+  { color: "#FF5733", type: "colors" },
+  { color: "#33FF57", type: "colors" },
+  { color: "#3357FF", type: "colors" },
+  { color: "#F1C40F", type: "colors" },
+  { color: "#9B59B6", type: "colors" },
+  { color: "#1ABC9C", type: "colors" },
+  { color: "#E67E22", type: "colors" },
+  { color: "#E74C3C", type: "colors" },
+  { color: "#2ECC71", type: "colors" },
+  { color: "#3498DB", type: "colors" },
+  { color: "#34495E", type: "colors" },
+  { color: "#16A085", type: "colors" },
+  { color: "#27AE60", type: "colors" },
+  { color: "#2980B9", type: "colors" },
+  { color: "#8E44AD", type: "colors" },
+  { color: "#F39C12", type: "colors" },
+  { color: "#D35400", type: "colors" },
+  { color: "#C0392B", type: "colors" },
+  { color: "#BDC3C7", type: "colors" },
+  { color: "#7F8C8D", type: "colors" }
+];

@@ -1,0 +1,21 @@
+button{
+    border: 2.5px solid rgb(49, 0, 128);
+    border-radius: 12px;
+    background-color: rgb(83, 18, 145);
+    padding: 8px 16px;
+    color: white;
+    font: 650 1.5em 'Roboto';
+    transition: 0.2s ease;
+}
+
+button:hover{
+    background-color: rgb(49, 0, 128);
+    cursor: pointer;
+}
+
+#color-div{
+    width: 200px;
+    height: 200px;
+    border: 1.5px solid gray;
+    margin: 0 auto;
+}
