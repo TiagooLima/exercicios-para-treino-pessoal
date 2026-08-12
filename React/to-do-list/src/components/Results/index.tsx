@@ -4,7 +4,7 @@ import './styles.css'
 export function Results(){
     const tasksList = JSON.parse(localStorage.getItem('tasks-list'))
     if(!tasksList){
-        return <p>Nenhuma tarefa registrada</p>
+        return <p className='none-task'>Nenhuma tarefa registrada</p>
     }
 
     const tasksListJSX = tasksList.map(task => (
