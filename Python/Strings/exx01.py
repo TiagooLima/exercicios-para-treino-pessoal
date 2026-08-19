@@ -66,3 +66,82 @@ def valorPorExtenso(num):
 
 
 print(valorPorExtenso(23448932))
+
+# Leet é uma forma de se escrever o alfabeto latino usando outros símbolos em lugar das letras, como números por exemplo. A própria palavra leet admite muitas variações, como l33t ou 1337. O uso do leet reflete uma subcultura relacionada ao mundo dos jogos de computador e internet, sendo muito usada para confundir os iniciantes e afirmar-se como parte de um grupo. Pesquise sobre as principais formas de traduzir as letras. Depois, faça um programa que peça uma texto e transforme-o para a grafia leet speak.
+
+""" print(ord('a')) #M: 65---> 4
+print(ord('e')) #M: 69---> 3
+print(ord('i')) #M: 73---> 1
+print(ord('l')) #M: 76---> 1
+print(ord('o')) #M: 79---> 0
+print(ord("s")) #M: 83---> 5
+print(ord("t")) #M: 84---> 7 """
+
+
+def leetTranslator(string):
+    stringAtualizada = ""
+    for char in string:
+        if(ord(char.upper()) == 65):
+            stringAtualizada += '4'
+        elif(ord(char.upper()) == 69):
+            stringAtualizada += '3'
+        elif(ord(char.upper()) == 73):
+            stringAtualizada += '1'
+        elif(ord(char.upper()) == 76):
+            stringAtualizada += '1'
+        elif(ord(char.upper()) == 79):
+            stringAtualizada += '0'
+        elif(ord(char.upper()) == 83):
+            stringAtualizada += '5'
+        elif(ord(char.upper()) == 84):
+            stringAtualizada += '7'
+        else:
+            stringAtualizada += char
+    return stringAtualizada
+
+print(leetTranslator("Tiago"))
+
+# Escreva um programa que, a partir de um nome informado pelo usuário, exiba suas iniciais. As iniciais são formadas pela primeira letra de cada nome, sendo que todas deverão aparecer em maiúsculas na saída do programa. Note que os conectores e, do, da, dos, das, de, di, du não são considerados nomes e, portanto, não devem ser considerados para a obtenção das iniciais. As iniciais devem ser impressas em maiúsculas, ainda que o nome seja entrado todo em minúsculas.
+
+def initials(string):
+    arrNotCount = ['do', 'de', 'da', 'dos', 'das', 'di', 'du']
+    stringArr = string.split() # ['tiago', 'dos', 'anjos', 'de', 'lima']
+    initialsString = ""
+    for c in stringArr:
+        for d in range(0,len(arrNotCount)):
+            if(c == arrNotCount[d]):
+                break
+        else:
+            initialsString += c[0].upper()
+    return initialsString
+
+print(initials('Tiago dos Anjos de Lima'))
+        
+# Faça um programa que peça ao usuário duas strings diferentes, verifique então se elas são anagramas, ou seja, tem o mesmo conjunto de letras.
+
+def anagramFinder(str1, str2):
+    if (len(str1) == len(str2)):
+        for c in str1:
+            for d in str2:
+                if(c.lower() == d.lower()):
+                    break
+            else:
+                return 'Não são anagramas'                
+        return 'São anagramas'
+    else:
+        return 'Não são anagramas'
+
+print(anagramFinder('banana', 'ananab'))
+
+# Dado uma frase informada pelo usuário, converta as letras minúsculas em maiúsculas e vice-versa.
+
+def capitalChange(string):
+    finalString = ""
+    for char in string:
+        if(char == char.lower()):
+            finalString += char.upper()
+        else:
+            finalString += char.lower()
+    return finalString
+
+print(capitalChange('TiAgo'))
