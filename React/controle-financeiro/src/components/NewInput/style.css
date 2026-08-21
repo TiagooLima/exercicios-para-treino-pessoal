@@ -1,0 +1,60 @@
+.newInputButton{
+    background-color: white;
+    padding: 8px 16px;
+    font-weight: 450;
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    border-radius: 13px;
+    border: 3px solid rgb(0, 136, 214);
+    color: black;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.newInputButton:hover{
+    color: aliceblue;
+    font-weight: 650;
+    background-color: rgb(0, 136, 214);
+}
+
+.input-page{
+    background-color: whitesmoke;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border: 2px solid darkgray;
+    border-radius: 15px;
+}
+
+form{
+    display: flex;
+    flex-flow: column;
+    align-items: center;    
+}
+
+form button{
+    padding: 5px 10px;
+    border: 2px solid darkcyan;
+    background-color: white;
+    color: darkcyan;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 15px;
+    max-width: 10vw;
+    transition: 0.2s ease;
+}
+
+form button:hover{
+    background-color: darkcyan;
+    color: white;    
+}
+
+label{
+    color: gray;
+    font-weight: 450;
+}

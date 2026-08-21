@@ -1,0 +1,38 @@
+#caixa-de-registros{
+    display: flex;
+    flex-flow: wrap;
+    width: 90vw;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.results-card{
+    width: 250px;
+    height: 200px;
+    background-color: aliceblue;
+    border: 1px solid lightblue;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.results-card h3{
+    font-size: 1.3em;
+}
+
+.results-card h4{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.results-card span {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
