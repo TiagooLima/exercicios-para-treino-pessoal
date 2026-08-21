@@ -1,3 +1,3 @@
-<h2>Arquivo de projetos feitos em processo de aprendizagem em línguas de programação e marcação</h2>
+# Armazém de projetos e exercícios feitos para consolidar conhecimento
 
- > No processo de conhecimento adquirido ao aprender nova línguagem, é feito consigo diversos projetos para consolidar esse conhecimento. Esse repositório é o arquivo desses projetos demonstrando a evolução dessa aprendizagem, para consultas futuras.
+> Atualmente contém aplicações web básicas e exercícios de lógica de programação
